@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlantCare - Login</title>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: #edf5e9;
+
+            padding: 20px;
+
+        }
+
+        .login-box {
+
+            background: white;
+
+            width: 100%;
+
+            max-width: 380px;
+
+            padding: 32px;
+
+            border-radius: 16px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+            text-align: center;
+
+        }
+
+        .plant {
+
+            font-size: 48px;
+
+            margin-bottom: 10px;
+
+        }
+
+        h1 {
+
+            color: #246b3b;
+
+            margin-bottom: 8px;
+
+        }
+
+        p {
+
+            color: #66756a;
+
+            margin-bottom: 24px;
+
+            font-size: 14px;
+
+        }
+
+        input {
+
+            width: 100%;
+
+            padding: 12px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid #ccd9ce;
+
+            border-radius: 8px;
+
+            font-size: 15px;
+
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 12px;
+
+            background: #287a43;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 8px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background: #1e6034;
+
+        }
+
+        .note {
+
+            margin-top: 18px;
+
+            font-size: 12px;
+
+            line-height: 1.5;
+
+        }
+
+        .explore {
+
+            display: inline-block;
+
+            margin-top: 16px;
+
+            color: #246b3b;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <div class="plant">🌱</div>
+
+        <h1>PlantCare</h1>
+
+        <p>Discover plant diseases and learn how to protect your plants.</p>
+
+        <form id="loginForm">
+
+            <input
+
+                type="email"
+
+                id="email"
+
+                placeholder="Enter your email"
+
+                required
+
+            >
+
+            <input
+
+                type="password"
+
+                id="password"
+
+                placeholder="Enter a password"
+
+                required
+
+                minlength="4"
+
+            >
+
+            <button type="submit">Continue</button>
+
+        </form>
+
+        <div class="note">
+
+            Demo login only. This page does not create accounts
+
+            or securely authenticate users.
+
+        </div>
+
+        <a class="explore" href="index.html">
+
+            Explore PlantCare without logging in
+
+        </a>
+
+    </div>
+
+    <script>
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert("This is a demo login. Opening PlantCare.");
+
+            window.location.href = "index.html";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

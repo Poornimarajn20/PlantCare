@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlantCare - Plant Disease Information System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">🌱 PlantCare</div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#checker">Disease Checker</a>
+
+            <a href="#diseases">Diseases</a>
+
+            <a href="login.html">Login</a>
+
+        </nav>
+
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">A HEALTHIER FUTURE STARTS WITH HEALTHY PLANTS</p>
+
+            <h1>Keep Your Plants<br>Healthy and Happy</h1>
+
+            <p>
+
+                Learn about common plant diseases, identify possible
+
+                symptoms and discover simple prevention methods.
+
+            </p>
+
+            <a href="#checker" class="main-button">Explore Disease Checker</a>
+
+        </div>
+
+        <div class="hero-icon">🌿</div>
+
+    </section>
+
+    <section class="checker section" id="checker">
+
+        <div class="section-heading">
+
+            <p class="tagline">PLANT HEALTH GUIDE</p>
+
+            <h2>Plant Disease Checker</h2>
+
+            <p>Select a plant and its symptoms to explore possible diseases.</p>
+
+        </div>
+
+        <div class="checker-card">
+
+            <label for="plant">Select your plant</label>
+
+            <select id="plant">
+
+                <option value="">Choose a plant</option>
+
+                <option value="Tomato">Tomato</option>
+
+                <option value="Potato">Potato</option>
+
+                <option value="Chilli">Chilli</option>
+
+            </select>
+
+            <label for="symptom">Select a symptom</label>
+
+            <select id="symptom">
+
+                <option value="">Choose a symptom</option>
+
+                <option value="yellow">Yellow leaves</option>
+
+                <option value="spots">Dark or brown spots</option>
+
+                <option value="wilting">Wilting leaves</option>
+
+                <option value="curling">Curling leaves</option>
+
+                <option value="healthy">No visible symptoms</option>
+
+            </select>
+
+            <button id="checkButton" class="main-button">
+
+                Check Information
+
+            </button>
+
+            <div id="result" class="result" aria-live="polite">
+
+                <p>Your plant information will appear here.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="diseases section" id="diseases">
+
+        <div class="section-heading">
+
+            <p class="tagline">LEARN AND PREVENT</p>
+
+            <h2>Common Plant Diseases</h2>
+
+            <p>Explore basic information about plant diseases.</p>
+
+        </div>
+
+        <input
+
+            type="search"
+
+            id="search"
+
+            class="search-box"
+
+            placeholder="Search diseases or plants..."
+
+            aria-label="Search diseases or plants"
+
+        >
+
+        <div id="diseaseList" class="disease-grid"></div>
+
+    </section>
+
+    <section class="tips section">
+
+        <div class="section-heading">
+
+            <p class="tagline">CARE FOR YOUR PLANTS</p>
+
+            <h2>Simple Prevention Tips</h2>
+
+        </div>
+
+        <div class="tips-grid">
+
+            <div class="tip-card">
+
+                <span>💧</span>
+
+                <h3>Water Carefully</h3>
+
+                <p>Avoid overwatering and ensure proper drainage.</p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <span>☀️</span>
+
+                <h3>Provide Sunlight</h3>
+
+                <p>Give each plant the amount of sunlight it needs.</p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <span>🍃</span>
+
+                <h3>Check Leaves</h3>
+
+                <p>Inspect plants regularly for unusual changes.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h3>🌱 PlantCare</h3>
+
+        <p>Plant Disease Information System</p>
+
+        <p class="disclaimer">
+
+            Educational information only. Symptoms can have multiple causes.
+
+            Consult an agricultural expert for accurate diagnosis.
+
+        </p>
+
+        <p>© 2026 PlantCare | Student Project</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
